@@ -12,6 +12,8 @@
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
+		<link rel="stylesheet" href="css/custom.css" >
+
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -24,8 +26,140 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section id="intro-slide">
+					<h1>Unstoppable growth of front-end frameworks</h1> 
+					<q>A simple summary of the web front-end evolution, which will try to describe how and why tools improve & why there is still something to explore.</q>
+					<footer>
+						<p>Presentation by Michal Vanko</p>
+						<a href="mailto: michal.vanko@ness.com"
+							class="e-mail"
+						>michal.vanko@ness.com</a>
+					</footer>
+					<aside class="notes">
+							Vitam kolegov kolegyne,<br>
+							Tesi ma ze ste si nasli na mna cas,<br>
+							Dneska sme sa tu zisli v ramci nessackeho programu zvaneho Full-Stack,<br>
+							Ulohou tohto programu je rozsirit vedomosti o programovani a vyvoja softwaru na jeho celej skale<br>
+							Ja som si pre vas pripravil prednasku o Front-endovych frameworkoch a tooloch a chcel by som priniest taky nadhlad a vstup do
+							sialeho a velmi obrovskeho javascriptoveho ekosystemu 
+
+					</aside>
+				</section>
+				<section id="history-slide">
+					<h4 class="code-like-heading">
+						JavaScript.addEventListener('birthday-parties', presentation.log)
+					</h4>
+					<ol>
+						<li class="fragment">
+							Date of Birth: May 1995
+						</li>
+						<li class="fragment">
+							Standardization: June 1997
+						</li>
+						<li class="fragment">
+							<div>jQuery's Date of Birth: January 2006</div>
+							<div class="small-info">jQuery's 3.0.0 Birthday Party: Jun 9, 2016 </div>
+							<img src="img/jQuerygithub.png" alt="jQuery statistics from github" />
+							<img src="img/jQyeryStatsnpm.png" alt="jQuery statistics from npm" />
+						</li>
+						<li class="fragment">
+							<div>webpack's Date of Birth: Feb 19, 2014</div>
+							<div class="small-info">webpack's 4.0.0 birthday party: Feb 25, 2017</div>
+							<img src="img/webpackgithubstatistics.png" alt="webpack statistics from github" />
+							<img src="img/webpacknpmstatistics.png" alt="webpack statistics from github" />
+						</li>
+					</ol>
+
+					<aside class="notes">
+							1. Brandan Eich in 10 days<br>
+							<b>May 2017 94.5% websitesuse Javascript</b><br>
+							2. Proposal by Netscape in November 1996<br>
+							3. jQuery released in  January 2006  <br>
+							4. webpack is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.<br>
+							
+					</aside>
+				</section>
+
+				<section id="frameworks-slide">
+					<section id="backbone-slide">
+						<figure>
+							<img src="img/backbone-google.png" alt="Backbone by google">
+							<figcaption>
+								Source: <a href="https://www.google.sk/search?q=backbone+js">https://www.google.sk/search?q=backbone+js</a></figcaption>
+						</figure>
+					</section>
+
+					<section id="knockout-slide">
+					<figure>
+						<img src="img/knockoutbygoogle.png" alt="knockout by google">
+						<figcaption>
+							Source: <a href="https://www.google.sk/search?q=knockout+js">https://www.google.sk/search?q=knockout+js</a></figcaption>
+					</figure>
+          </section>
+
+          <section id="angular-slide">
+              <figure>
+                <img src="img/angularbygoogle.png" alt="angular by google">
+                <figcaption>
+                  Source: <a href="https://www.google.sk/search?q=angular+js">https://www.google.sk/search?q=angular+js</a></figcaption>
+              </figure>
+          </section>
+          <section id="angular2-slide">
+              <figure>
+                <img src="img/angular2bygoogle.png" alt="angular2 by google">
+                <figcaption>
+                  Source: <a href="https://www.google.sk/search?q=angular+2">https://www.google.sk/search?q=angular2</a></figcaption>
+              </figure>
+          </section>
+
+          <section id="react-slide">
+              <figure>
+                <img src="img/reactbygoogle.png" alt="react by google">
+                <figcaption>
+                  Source: <a href="https://www.google.sk/search?q=react">https://www.google.sk/search?q=react</a></figcaption>
+              </figure>
+          </section>
+
+          <section id="vue-slide">
+              <figure>
+                <img src="img/vuebygoogle.png" alt="vue by google">
+                <figcaption>
+                  Source: <a href="https://www.google.sk/search?q=vue">https://www.google.sk/search?q=vue</a></figcaption>
+              </figure>
+          </section>
+
+        </section>
+        
+        <section id="graphs-slides">
+          <section id="google-graph-slide">
+            <h3>Google trends</h3>
+            <figure>
+                <img src="img/interestovertime1.png" alt="google trends graph">
+                <figcaption>
+                  Source: <a href="https://trends.google.com/trends/explore?cat=32&date=all&q=%2Fm%2F0j45p7w,%2Fm%2F012l1vxv,jquery">https://trends.google.com/trends/explore?cat=32&date=all&q=%2Fm%2F0j45p7w,%2Fm%2F012l1vxv,jquery</a></figcaption>
+              </figure>
+          </section>
+
+          <section id="npm-graph-slide">
+            <h3>npm downloads</h3>
+            <figure>
+              <img src="img/interestovertime1.png" alt="npm downloads graph">
+              <figcaption>
+                Source: <a href="https://npm-stat.com/charts.html?package=angular&package=react&package=vue&package=backbone&package=jquery&from=2015-03-13&to=2018-02-28">
+                  https://npm-stat.com</a></figcaption>
+            </figure>
+          </section>
+
+          <section id="google-graph-slide">
+            <h3>github stars</h3>
+            <figure>
+              <img src="img/githubstarsstat.png" alt="github stars graph">
+              <figcaption>
+                Source: <a href="http://www.timqian.com/star-history/#facebook/react&angular/angular&vuejs/vue&jashkenas/backbone&knockout/knockout&jquery/jquery&webpack/webpack">
+                  http://www.timqian.com/star-history/</a></figcaption>
+            </figure>
+          </section>
+        </section>
 			</div>
 		</div>
 
