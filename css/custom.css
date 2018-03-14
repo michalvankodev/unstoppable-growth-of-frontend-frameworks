@@ -1,0 +1,30 @@
+#intro-slide h1 {
+    font-size: 1.2em;
+}
+
+#history-slide {
+    font-size: 0.7em;
+    line-height: 1.3em;
+}
+
+#backbone-mvc-slide strong {
+    vertical-align: top;
+}
+
+#angular-basics-slide {
+    font-size: 0.6em;
+}
+
+h4.code-like-heading {
+    font-family: monospace;
+    text-transform: none;
+    font-size: 0.8em
+}
+
+#github-graph-slide img {
+    height: 50vh;
+}
+
+#performance-slide img {
+    height: 60vh;
+}

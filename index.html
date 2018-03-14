@@ -89,13 +89,60 @@
 						</figure>
 					</section>
 
+					<section id="backbone-mvc-slide">
+						<h2 id="Model-View-separation">Backbone Models and Views</h2>
+
+						<img class="figure" src="http://backbonejs.org/docs/images/intro-model-view.svg" alt="Model-View Separation.">
+				
+						<div class="columns">
+							<div class="col-50">
+								<strong>Model</strong>
+								<ul>
+									<li>Orchestrates data and business logic.</li>
+									<li>Loads and saves from the server.</li>
+									<li>Emits events when data changes.</li>
+								</ul>
+							</div>
+							<div class="col-50">
+								<strong>View</strong>
+								<ul>
+									<li>Listens for changes and renders UI.</li>
+									<li>Handles user input and interactivity.</li>
+									<li>Sends captured input to the model.</li>
+								</ul>
+							</div>
+						</div>
+						<aside class="notes">
+							<p>
+								The single most important thing that Backbone can help you with is keeping
+								your business logic separate from your user interface. When the two are
+								entangled, change is hard; when logic doesn't depend on UI, your
+								interface becomes easier to work with.
+							</p>
+						</aside>
+					</section>
+
 					<section id="knockout-slide">
 					<figure>
 						<img src="img/knockoutbygoogle.png" alt="knockout by google">
 						<figcaption>
 							Source: <a href="https://www.google.sk/search?q=knockout+js">https://www.google.sk/search?q=knockout+js</a></figcaption>
 					</figure>
-          </section>
+					</section>
+					
+					<section id="knockout-slide">
+						<h2>Knockout basics</h2>
+
+						<img src="http://knockoutjs.com/img/homepage-example.png" alt="Knockoutjs source code example">
+						<aside class="notes">
+							<p>
+								MVVM -patern
+								Elegant dependency tracking - automatically updates the right parts of your UI whenever your data model changes.<br>
+Declarative bindings - a simple and obvious way to connect parts of your UI to your data model. You can construct a complex dynamic UIs easily using arbitrarily nested binding contexts.<br>
+Trivially extensible - implement custom behaviors as new declarative bindings for easy reuse in just a few lines of code.
+							</p>
+						</aside>		
+					</section>
 
           <section id="angular-slide">
               <figure>
@@ -103,22 +150,61 @@
                 <figcaption>
                   Source: <a href="https://www.google.sk/search?q=angular+js">https://www.google.sk/search?q=angular+js</a></figcaption>
               </figure>
-          </section>
-          <section id="angular2-slide">
-              <figure>
-                <img src="img/angular2bygoogle.png" alt="angular2 by google">
-                <figcaption>
-                  Source: <a href="https://www.google.sk/search?q=angular+2">https://www.google.sk/search?q=angular2</a></figcaption>
-              </figure>
-          </section>
+					</section>
+					
+          <section id="angular-basics-slide">
 
+					<h3>AngularJS Tutorial steps:</h3>
+					0 - Bootstrapping<br>
+					1 - Static Template<br>
+					2 - AngularJS Templates<br>
+					3 - Components<br>
+					4 - Directory and File Organization<br>
+					5 - Filtering Repeaters<br>
+					6 - Two-way Data Binding<br>
+					7 - XHR & Dependency Injection<br>
+					8 - Templating Links & Images<br>
+					9 - Routing & Multiple Views<br>
+					10 - More Templating<br>
+					11 - Custom Filters<br>
+					12 - Event Handlers<br>
+					13 - REST and Custom Services<br>
+					14 - Animations<br>
+					The End
+					</section>
+
+					
+					<section id="angular2-architecture-slide">
+						<figure>
+							<img src="img/angular2bygoogle.png" alt="angular2 by google">
+							<figcaption>
+								Source: <a href="https://www.google.sk/search?q=angular+2">https://www.google.sk/search?q=angular2</a></figcaption>
+              </figure>
+						</section>
+						
+	
+						<section id="angular2-slide">
+								<figure>
+									<img src="https://angular.io/generated/images/guide/architecture/overview2.png" alt="angular2 architecture">
+									<figcaption>
+										Source: <a href="https://angular.io/generated/images/guide/architecture/overview2.png">https://angular.io/generated/images/guide/architecture/overview2.png</a></figcaption>
+								</figure>
+						</section>
           <section id="react-slide">
               <figure>
                 <img src="img/reactbygoogle.png" alt="react by google">
                 <figcaption>
                   Source: <a href="https://www.google.sk/search?q=react">https://www.google.sk/search?q=react</a></figcaption>
               </figure>
-          </section>
+					</section>
+					
+					<section id="flux-slide">
+						<figure>
+								<img src="https://cdn-images-1.medium.com/max/1400/1*Ek68XwgLgxwlAZl6hhxx1w.png" alt="react by google">
+							<figcaption>
+								Source: <a href="https://medium.com/@murtazazaidi_/">https://medium.com/@murtazazaidi_/</a></figcaption>
+						</figure>
+					</section>
 
           <section id="vue-slide">
               <figure>
@@ -126,7 +212,15 @@
                 <figcaption>
                   Source: <a href="https://www.google.sk/search?q=vue">https://www.google.sk/search?q=vue</a></figcaption>
               </figure>
-          </section>
+					</section>
+					
+					<section id="vue-inner-slide">
+							<figure>
+									<img src="https://vuejs.org/images/data.png" alt="vue by google">
+									<figcaption>
+										Source: <a href="https://vuejs.org/">https://vuejs.org/</a></figcaption>
+								</figure>
+					</section>
 
         </section>
         
@@ -143,14 +237,14 @@
           <section id="npm-graph-slide">
             <h3>npm downloads</h3>
             <figure>
-              <img src="img/interestovertime1.png" alt="npm downloads graph">
+              <img src="img/npmstat.png" alt="npm downloads graph">
               <figcaption>
                 Source: <a href="https://npm-stat.com/charts.html?package=angular&package=react&package=vue&package=backbone&package=jquery&from=2015-03-13&to=2018-02-28">
                   https://npm-stat.com</a></figcaption>
             </figure>
           </section>
 
-          <section id="google-graph-slide">
+          <section id="github-graph-slide">
             <h3>github stars</h3>
             <figure>
               <img src="img/githubstarsstat.png" alt="github stars graph">
@@ -159,7 +253,76 @@
                   http://www.timqian.com/star-history/</a></figcaption>
             </figure>
           </section>
-        </section>
+				</section>
+				
+				<section id="performance-slide">
+					<section>
+						<figure>
+								<img src="img/performance1.png" alt="Duration in milliseconds ± standard deviation (Slowdown = Duration / Fastest)
+								">
+								<figcaption>
+									Source: <a href="https://rawgit.com/krausest/js-framework-benchmark/master/webdriver-ts-results/table.html">
+										https://rawgit.com/krausest/js-framework-benchmark/master/webdriver-ts-results/table.html</a></figcaption>
+							</figure>
+					</section>
+					<section>
+						<figure>
+								<img src="img/performance2.png" alt="Startup metrics">
+								<figcaption>
+									Source: <a href="https://rawgit.com/krausest/js-framework-benchmark/master/webdriver-ts-results/table.html">
+										https://rawgit.com/krausest/js-framework-benchmark/master/webdriver-ts-results/table.html</a></figcaption>
+							</figure>
+						</section>
+						<section>
+							<figure>
+								<img src="img/performance3.png" alt="Memory allocation in MBs ± standard deviation">
+								<figcaption>
+									Source: <a href="https://rawgit.com/krausest/js-framework-benchmark/master/webdriver-ts-results/table.html">
+										https://rawgit.com/krausest/js-framework-benchmark/master/webdriver-ts-results/table.html</a></figcaption>
+							</figure>
+						</section>
+				</section>
+				<section id="summary">
+					<ul>
+						<li class="fragment">Client applications are getting richer</li>
+						<li class="fragment">BFFs</li>
+						<li class="fragment">Systems are more reactive</li>
+					</ul>
+					<aside class="notes">
+						Backend for frontends,<br>
+						From links to http calls and websockets,<br>
+						Frontend frameworks ponukaju takmer plny stack od automatizovaneho integracneho testingu po endpoint odkial citate data.
+					</aside>
+				</section>
+				<section id="links">
+					<h2>Links</h2>
+					<ul>
+						<li><a href="https://webpack.js.org/">webpack</a></li>
+						<li>
+							Front-end libraries & frameworks
+							<a href="https://jquery.com/">jQuery</a>
+							<a href="https://vuejs.org/">Vue.js</a>
+							<a href="https://reactjs.org/">React.js</a>
+							<a href="https://angular.io/">Angular</a>
+						</li>
+						<li>
+							Reactive streams
+							<a href="https://gist.github.com/staltz/868e7e9bc2a7b8c1f754">Introduction to Reactive Programming</a>
+							<a href="https://github.com/staltz/callbag-basics">Callbags</a>
+							<a href="https://github.com/cujojs/most">most</a>
+						</li>
+					</ul>
+				</section>
+
+				<section id="thankyou-slide">
+					<ul>
+						<li class="fragment">Keep exploring</li>
+						<li class="fragment">Rethink best practices</li>
+						<li class="fragment">...</li>		
+						<li class="fragment">Thank you</li>						
+					</ul>
+
+				</section>
 			</div>
 		</div>
 
