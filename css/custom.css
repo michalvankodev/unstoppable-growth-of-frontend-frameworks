@@ -32,3 +32,7 @@ h4.code-like-heading {
 .highlight {
     color: #ff7e00;
 }
+#links a {
+    padding: 0 1em;
+    white-space: nowrap;
+}
