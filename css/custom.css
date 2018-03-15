@@ -28,3 +28,7 @@ h4.code-like-heading {
 #performance-slide img {
     height: 60vh;
 }
+
+.highlight {
+    color: #ff7e00;
+}
